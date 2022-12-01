@@ -60,6 +60,9 @@ main{
     background: none;
     border: none;
     width: 4.8rem;
+
+    cursor: pointer;
+    
 }
 
 .cards{
@@ -77,6 +80,10 @@ main{
     border-radius: 24px;
 
     background: #E1E1E6;
+}
+
+.hide{
+    display: none;
 }
 
 @media (max-width: 830px){
