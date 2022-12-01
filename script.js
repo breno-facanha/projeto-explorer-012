@@ -1,4 +1,4 @@
-// variaveis dos butões
+// variaveis dos butões do timer
 const buttonPlay = document.querySelector('.play');
 const buttonPause = document.querySelector('.pause');
 const buttonStop = document.querySelector('.stop');
@@ -9,6 +9,9 @@ const buttonRemoveCinco = document.querySelector('.removeCinco');
 const secondsDisplay = document.querySelector('.seconds')
 const minutesDisplay = document.querySelector('.minutes')
 
+// variaveis dos buttoes do son 
+const buttonFloresta = document.querySelector('.floresta')
+
 buttonPlay.addEventListener('click', playTimer)
 buttonPause.addEventListener('click', pause)
 buttonStop.addEventListener('click', stop)
@@ -18,6 +21,8 @@ buttonStop.addEventListener('click', function(){
 
 buttonAddCinco.addEventListener('click', maisCinco)
 buttonRemoveCinco.addEventListener('click', menosCinco)
+
+buttonFloresta.addEventListener('click', floresta)
 
 function playTimer(){  
     buttonPlay.classList.add('hide')
@@ -74,6 +79,11 @@ function menosCinco() {
     }else{
     minutesDisplay.innerHTML = String(Number(minutesDisplay.textContent) - 5).padStart(2, "0")
     }
+}
+
+function floresta() {
+    const audioFloresta = new Audio("audios/Floresta.wav?raw=true")
+    audioFloresta.play()
 }
 
 
