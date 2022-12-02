@@ -54,6 +54,16 @@ function stop () {
     secondsDisplay.innerHTML = String(00).padStart(2,0)
     buttonPause.classList.add('hide')
     buttonPlay.classList.remove('hide')
+
+    audioFloresta.pause()
+    audioChuva.pause()
+    audioLareira.pause()
+    audioCafeteria.pause() 
+
+    buttonFloresta.classList.remove("hidee")
+    buttonChuva.classList.remove("hidee")
+    buttonCafeteria.classList.remove("hidee")
+    buttonLareira.classList.remove("hidee")
 }
 
 function countdown() {
