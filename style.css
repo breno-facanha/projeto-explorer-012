@@ -65,6 +65,11 @@ main{
     
 }
 
+.controls .pause{
+   
+    margin-bottom: 12px;
+}
+
 .cards{
     width: 30.8rem;
     height: 33.6rem;
@@ -86,7 +91,6 @@ main{
 .hide{
     display: none;
 }
-
 
 
 .cards .hidee{
