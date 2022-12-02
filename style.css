@@ -61,15 +61,14 @@ main{
 .controls button{
     background: none;
     border: none;
-    width: 4.8rem;
-    height: 4.8rem;
+    height: 6.4rem;
+    width: 6.4rem;
     cursor: pointer;
     
 }
 
 .controls .pause{
-    margin-right: 12px;
-    margin-bottom: 12px;
+    
 }
 
 .cards{
