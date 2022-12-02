@@ -80,11 +80,24 @@ main{
     border-radius: 24px;
 
     background: #E1E1E6;
+    cursor: pointer;
 }
 
 .hide{
     display: none;
 }
+
+
+
+.cards .hidee{
+    background-color: #02799D;
+}
+
+.hidee svg path {
+    fill: white;  
+}
+
+
 
 @media (max-width: 830px){
     main{
