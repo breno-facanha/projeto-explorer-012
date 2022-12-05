@@ -21,6 +21,69 @@ const audioChuva = new Audio("audios/Chuva.wav")
 const audioCafeteria = new Audio("audios/Cafeteria.wav")
 const audioLareira = new Audio("audios/Lareira.wav")
 
+//variaveis LightMode e DarkMode \\
+const buttonLigthMode = document.querySelector('.light')
+const buttonDarkMode = document.querySelector('.dark')
+const body = document.querySelector('body')
+const timersDark = document.querySelector('.timer')
+
+const buttonsAudiosDark = document.querySelector('.cards button')
+
+
+//eventos dos butões do light e dark mode
+buttonLigthMode.addEventListener('click', modoLight)
+buttonDarkMode.addEventListener('click', darkMode)
+
+
+
+function modoLight(){
+    buttonDarkMode.style.display = "initial"
+    buttonLigthMode.style.display = "none"
+
+    body.style.backgroundColor = "black"
+    timersDark.style.color = "white"
+
+
+    buttonFloresta.style.background = "#29292E"
+    buttonChuva.style.background = "#29292E"
+    buttonCafeteria.style.background = "#29292E"
+    buttonLareira.style.background = "#29292E"
+
+    
+    buttonDarkMode.style.display = "initial"
+    buttonLigthMode.style.display = "none"
+
+
+    buttonFloresta.classList.add("lighting")
+    buttonChuva.classList.add("lighting")
+    buttonCafeteria.classList.add("lighting")
+    buttonLareira.classList.add("lighting")
+
+}
+
+function darkMode(){
+    buttonDarkMode.style.display = "none"
+    buttonLigthMode.style.display = "initial"
+
+    body.style.backgroundColor = "white"
+    timersDark.style.color = "black"
+    buttonsAudiosDark.style.fill = "black" 
+
+    buttonFloresta.classList.remove("lighting")
+    buttonChuva.classList.remove("lighting")
+    buttonCafeteria.classList.remove("lighting")
+    buttonLareira.classList.remove("lighting")
+
+    buttonFloresta.style.background = "#E1E1E6"
+    buttonChuva.style.background = "#E1E1E6"
+    buttonCafeteria.style.background = "#E1E1E6"
+    buttonLareira.style.background = "#E1E1E6"
+
+    
+
+
+}
+
 //eventos dos butões do timer
 buttonPlay.addEventListener('click', playTimer)
 buttonPause.addEventListener('click', pause)
@@ -36,6 +99,7 @@ buttonChuva.addEventListener('click', chuva)
 buttonCafeteria.addEventListener('click', cafeteria)
 buttonChuva.addEventListener('click', chuva)
 buttonLareira.addEventListener('click', lareira)
+
 
 function playTimer(){  
     buttonPlay.classList.add('hide')

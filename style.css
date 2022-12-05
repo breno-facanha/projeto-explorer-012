@@ -14,11 +14,21 @@ body{
     padding-top: 19.6rem ;
 }
 
+header button {
+    background: none;
+    border: none;
+
+    position: absolute;
+    right: 6.0rem;
+    top: 6.0rem;
+    cursor: pointer;
+
+}
+
 main{
+    position: relative;
     width: 83.3rem;
     height: 33.6rem;
-
-    
 
     display: flex;
     justify-content: center;
@@ -92,13 +102,30 @@ main{
 }
 
 
-.cards .hidee{
-    background-color: #02799D;
-}
+
 
 .hidee svg path {
     fill: white;  
 }
+
+
+.cards .lighting{
+    background-color: #E1E1E6;
+}
+
+.lighting svg path {
+    fill: white;  
+}
+
+.cards .hidee{
+    background-color: #02799D !important;
+}
+
+.dark{
+    display: none;  
+}
+
+/* dark mode*/
 
 
 
@@ -111,6 +138,13 @@ main{
 @media (max-width: 800px){
     body{
         padding-top: 60px ;
+    }
+    header button {
+        background: none;
+        border: none;
+    
+        right: 3.0rem;
+        top: 2.0rem;
     }
     main{
         display: flex;
